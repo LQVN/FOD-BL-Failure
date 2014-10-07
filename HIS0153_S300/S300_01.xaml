@@ -1,0 +1,54 @@
+﻿
+<ResourceDictionary xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation' xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml' xmlns:d='http://schemas.microsoft.com/expression/blend/2008' xmlns:mc='http://schemas.openxmlformats.org/markup-compatibility/2006' mc:Ignorable='d'>
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source='Synoptics/S300_01_Translated.xaml' />
+    </ResourceDictionary.MergedDictionaries>
+    <MimicTemplate x:Key='S300_01'>
+        <RSIViewContainer>
+            <!-- Graphic Part -->
+            <ContentPresenter x:Name='SYNOPTIC' Content='{Binding}' ContentTemplate='{StaticResource S300_01_Translated}' d:IsLocked='True'  />
+
+            <!-- Graphic Overlay Part -->
+            <Canvas x:Name='SYNOPTIC_OVERLAY'/>
+
+            <!-- FOD Part -->
+            <Canvas x:Name='FOD' Visibility='{CentumApplicationServiceBinding IsFODEnabled}' d:IsHidden="True">
+                <!-- FODStart -->
+<Mimic x:Name='_P301A' Unit='P301A' MimicTemplate='{StaticResource PUMP_YOKO_FOD}' Canvas.Top='696.999' Canvas.Left='832.332' Width="50" Height="60"/>
+<Mimic x:Name='_P301B' Unit='P301B' MimicTemplate='{StaticResource PUMP_YOKO_FOD}' Canvas.Top='874' Canvas.Left='833' Width="50" Height="63"/>
+<Mimic x:Name='_F301' Unit='F301' MimicTemplate='{StaticResource FILTER_YOKO_FOD}' Canvas.Top='738' Canvas.Left='415.5' Width="40" Height="62"/>
+<Mimic x:Name='_30HV0501' Unit='30HV0501' MimicTemplate='{StaticResource HANDVALVE_YOKO_FOD}' Canvas.Top='539.5' Canvas.Left='438'/>
+<Mimic x:Name='_F301_Copy' Unit='F301' MimicTemplate='{StaticResource FILTER_YOKO_FOD}' Canvas.Top='829' Canvas.Left='416' Width="40" Height="62"/>
+<!-- FODEnd -->
+
+
+
+            </Canvas>
+
+            <!-- BL Part -->
+            <Canvas x:Name='BL' Visibility='{CentumApplicationServiceBinding IsBLEnabled}'>
+                <!-- BLStart -->
+<Mimic x:Name='_HDT_FEED' Unit='HDT_FEED' MimicTemplate='{StaticResource INLETBL_YOKO_BL}' Canvas.Top='770.25' Canvas.Left='44'/>
+<!-- BLEnd -->
+
+
+
+            </Canvas>
+
+            <!-- FAILURE Part -->
+            <Canvas x:Name='FAILURE' Visibility='{CentumApplicationServiceBinding IsFailureEnabled}'>
+                <!-- FAILUREStart -->
+<Mimic x:Name='_P301A_FAILURE' Unit='P301A' MimicTemplate='{StaticResource PUMP_YOKO_FAILURE}' Canvas.Top='700' Canvas.Left='885'/>
+<Mimic x:Name='_P301B_FAILURE' Unit='P301B' MimicTemplate='{StaticResource PUMP_YOKO_FAILURE}' Canvas.Top='885' Canvas.Left='885'/>
+<Mimic x:Name='_F301_FAILURE' Unit='F301' MimicTemplate='{StaticResource FILTER_YOKO_FAILURE}' Canvas.Top='765' Canvas.Left='460'/>
+<Mimic x:Name='_F301_FAILURE_Copy' Unit='F301' MimicTemplate='{StaticResource FILTER_YOKO_FAILURE}' Canvas.Top='858' Canvas.Left='460'/>
+<!-- FAILUREEnd -->
+
+
+
+            </Canvas>
+
+        </RSIViewContainer>
+    </MimicTemplate>
+
+</ResourceDictionary>

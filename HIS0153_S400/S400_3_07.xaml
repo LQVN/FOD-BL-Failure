@@ -1,0 +1,197 @@
+﻿
+<ResourceDictionary xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation' xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml' xmlns:d='http://schemas.microsoft.com/expression/blend/2008' xmlns:mc='http://schemas.openxmlformats.org/markup-compatibility/2006' mc:Ignorable='d'>
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source='Synoptics/S400_3_07_Translated.xaml' />
+    </ResourceDictionary.MergedDictionaries>
+    <MimicTemplate x:Key='S400_3_07'>
+        <RSIViewContainer>
+            <!-- Graphic Part -->
+            <ContentPresenter x:Name='SYNOPTIC' Content='{Binding}' ContentTemplate='{StaticResource S400_3_07_Translated}' d:IsLocked='True'  />
+
+            <!-- Graphic Overlay Part -->
+            <Canvas x:Name='SYNOPTIC_OVERLAY'/>
+
+            <!-- FOD Part -->
+            <Canvas x:Name='FOD' Visibility='{CentumApplicationServiceBinding IsFODEnabled}'>
+                <!-- FODStart -->
+<Mimic x:Name='_45HV1601' Unit='45HV1601' MimicTemplate='{StaticResource HANDVALVE_YOKO_FOD}' Canvas.Top='503' Canvas.Left='250'/>
+<Mimic x:Name='_45HV1602' Unit='45HV1602' MimicTemplate='{StaticResource HANDVALVE_YOKO_FOD}' Canvas.Top='453.999' Canvas.Left='250'/>
+<Mimic x:Name='_45HV1603' Unit='45HV1603' MimicTemplate='{StaticResource HANDVALVE_YOKO_FOD}' Canvas.Top='402.999' Canvas.Left='250'/>
+<Mimic x:Name='_45HV1604' Unit='45HV1604' MimicTemplate='{StaticResource HANDVALVE_YOKO_FOD}' Canvas.Top='354' Canvas.Left='250'/>
+<Mimic x:Name='_45HV1605' Unit='45HV1605' MimicTemplate='{StaticResource HANDVALVE_YOKO_FOD}' Canvas.Top='206.375' Canvas.Left='478'/>
+<Mimic x:Name='_45HV1606' Unit='45HV1606' MimicTemplate='{StaticResource HANDVALVE_YOKO_FOD}' Canvas.Top='206.375' Canvas.Left='736.293'/>
+<Mimic x:Name='_45HV1701' Unit='45HV1701' MimicTemplate='{StaticResource HANDVALVE_YOKO_FOD}' Canvas.Top='892.328' Canvas.Left='1504.643' RenderTransformOrigin="0.5,0.5">
+	<Mimic.RenderTransform>
+		<TransformGroup>
+			<ScaleTransform/>
+			<SkewTransform/>
+			<RotateTransform Angle="90"/>
+			<TranslateTransform/>
+		</TransformGroup>
+	</Mimic.RenderTransform>
+</Mimic>
+<Mimic x:Name='_E456' Unit='E456' MimicTemplate='{StaticResource AIRCOOLER_YOKO_FOD}' Width="139.5" Height="56" Canvas.Top='365' Canvas.Left='1197.5'/>
+<Mimic x:Name='_HF_FR_V459A' Unit='HF_FR_V459A' MimicTemplate='{StaticResource OUTLETBL_YOKO_FOD}' Canvas.Top='206.375' Canvas.Left='622.636'/>
+<Mimic x:Name='_HF_FR_V459B' Unit='HF_FR_V459B' MimicTemplate='{StaticResource OUTLETBL_YOKO_FOD}' Canvas.Top='70' Canvas.Left='667.975'/>
+<Mimic x:Name='_HF_FR_V464' Unit='HF_FR_V464' MimicTemplate='{StaticResource OUTLETBL_YOKO_FOD}' Canvas.Top='491.125' Canvas.Left='1611.591'/>
+<Mimic x:Name='_PSV4501A' Unit='PSV4501A' MimicTemplate='{StaticResource PSV_YOKO_FOD}' Canvas.Top='189.662' Canvas.Left='550'/>
+<Mimic x:Name='_PSV4501C' Unit='PSV4501C' MimicTemplate='{StaticResource PSV_YOKO_FOD}' Canvas.Top='54.995' Canvas.Left='590.339'/>
+<Mimic x:Name='_PSV4502' Unit='PSV4502' MimicTemplate='{StaticResource PSV_YOKO_FOD}' Canvas.Top='473.455' Canvas.Left='1518.5'/>
+<Path Data="M455.5,247.5 L455.5,211" Height="36.833" Canvas.Left="455.5" Stretch="Fill" Stroke="#FFE6E600" Canvas.Top="211.166" Width="2" StrokeThickness="2"/>
+<Path Data="M456.33333,211.166 L478.01027,211.166" Height="2" Canvas.Left="454.503" Stretch="Fill" Stroke="#FFE6E600" StrokeThickness="2" Canvas.Top="210.332" Width="24.51"/>
+<Path Data="M456.33333,211.166 L478.01027,211.166" Height="2" Canvas.Left="491.994" Stretch="Fill" Stroke="#FFE6E600" StrokeThickness="2" Canvas.Top="210.332" Width="24.51"/>
+<Canvas x:Name="Arrow" Height="18" Canvas.Left="506.333" Canvas.Top="200.25" Width="21" RenderTransformOrigin="0.5,0.5">
+	<Canvas.RenderTransform>
+		<TransformGroup>
+			<ScaleTransform/>
+			<SkewTransform/>
+			<RotateTransform Angle="180"/>
+			<TranslateTransform/>
+		</TransformGroup>
+	</Canvas.RenderTransform>
+	<Rectangle Fill="#FF3C3C3C" Height="6" Canvas.Left="3.834" Stroke="#FF3C3C3C" StrokeThickness="2" Canvas.Top="3.981" Width="8"/>
+	<Path Fill="#FF3C3C3C" Stroke="#FF3C3C3C" StrokeThickness="2" Data="M1,1 L12.93934,1 12.93934,12.93934 z" Height="6" RenderTransformOrigin="0.461954425754477,0.538045570294887" Stretch="Fill" Width="6" Canvas.Left="0.423" Canvas.Top="3.755">
+		<Path.RenderTransform>
+			<TransformGroup>
+				<ScaleTransform/>
+				<SkewTransform/>
+				<RotateTransform Angle="224.27500000000003"/>
+				<TranslateTransform/>
+			</TransformGroup>
+		</Path.RenderTransform>
+	</Path>
+</Canvas>
+<Path Data="M455.5,247.5 L455.5,211" Height="36.833" Canvas.Left="713.782" Stretch="Fill" Stroke="#FFE6E600" Canvas.Top="211.166" Width="2" StrokeThickness="2"/>
+<Path Data="M456.33333,211.166 L478.01027,211.166" Height="2" Canvas.Left="712.785" Stretch="Fill" Stroke="#FFE6E600" StrokeThickness="2" Canvas.Top="210.332" Width="24.51"/>
+<Path Data="M456.33333,211.166 L478.01027,211.166" Height="2" Canvas.Left="750.276" Stretch="Fill" Stroke="#FFE6E600" StrokeThickness="2" Canvas.Top="210.332" Width="24.51"/>
+<Canvas x:Name="Arrow_Copy" Height="18" Canvas.Left="764.615" Canvas.Top="200.25" Width="21" RenderTransformOrigin="0.5,0.5">
+	<Canvas.RenderTransform>
+		<TransformGroup>
+			<ScaleTransform/>
+			<SkewTransform/>
+			<RotateTransform Angle="180"/>
+			<TranslateTransform/>
+		</TransformGroup>
+	</Canvas.RenderTransform>
+	<Rectangle Fill="#FF3C3C3C" Height="6" Canvas.Left="3.834" Stroke="#FF3C3C3C" StrokeThickness="2" Canvas.Top="3.981" Width="8"/>
+	<Path Fill="#FF3C3C3C" Stroke="#FF3C3C3C" StrokeThickness="2" Data="M1,1 L12.93934,1 12.93934,12.93934 z" Height="6" RenderTransformOrigin="0.461954425754477,0.538045570294887" Stretch="Fill" Width="6" Canvas.Left="0.423" Canvas.Top="3.755">
+		<Path.RenderTransform>
+			<TransformGroup>
+				<ScaleTransform/>
+				<SkewTransform/>
+				<RotateTransform Angle="224.27500000000003"/>
+				<TranslateTransform/>
+			</TransformGroup>
+		</Path.RenderTransform>
+	</Path>
+</Canvas>
+<Path Data="M456.33333,211.166 L478.01027,211.166" Height="2" Canvas.Left="502.087" Stretch="Fill" Stroke="#FFE6E600" StrokeThickness="2" Canvas.Top="262.332" Width="199.801"/>
+<Path Data="M455.5,247.5 L455.5,211" Height="22.833" Canvas.Left="577.5" Stretch="Fill" Stroke="#FFE6E600" Canvas.Top="240.582" Width="2" StrokeThickness="2"/>
+<Path Data="M456.33333,211.166 L478.01027,211.166" Height="2" Canvas.Left="590.339" Stretch="Fill" Stroke="#FFE6E600" StrokeThickness="2" Canvas.Top="228.165" Width="24.51"/>
+<Canvas x:Name="Arrow_Copy1" Height="18" Canvas.Left="604.678" Canvas.Top="218.083" Width="21" RenderTransformOrigin="0.5,0.5">
+	<Canvas.RenderTransform>
+		<TransformGroup>
+			<ScaleTransform/>
+			<SkewTransform/>
+			<RotateTransform Angle="180"/>
+			<TranslateTransform/>
+		</TransformGroup>
+	</Canvas.RenderTransform>
+	<Rectangle Fill="#FF3C3C3C" Height="6" Canvas.Left="3.834" Stroke="#FF3C3C3C" StrokeThickness="2" Canvas.Top="3.981" Width="8"/>
+	<Path Fill="#FF3C3C3C" Stroke="#FF3C3C3C" StrokeThickness="2" Data="M1,1 L12.93934,1 12.93934,12.93934 z" Height="6" RenderTransformOrigin="0.461954425754477,0.538045570294887" Stretch="Fill" Width="6" Canvas.Left="0.423" Canvas.Top="3.755">
+		<Path.RenderTransform>
+			<TransformGroup>
+				<ScaleTransform/>
+				<SkewTransform/>
+				<RotateTransform Angle="224.27500000000003"/>
+				<TranslateTransform/>
+			</TransformGroup>
+		</Path.RenderTransform>
+	</Path>
+</Canvas>
+<Path Data="M340.65,-14.424863 L340.65,-50.924863" Height="10.833" Canvas.Left="617.708" Stretch="Fill" Stroke="#FFE6E600" Canvas.Top="105.791" Width="2" StrokeThickness="2"/>
+<Path Data="M617.708,116.624 L665.25,116.624" Height="2" Canvas.Left="616.708" Stretch="Fill" Stroke="#FFE6E600" StrokeThickness="2" Canvas.Top="115.624" Width="49.542"/>
+<Path Data="M340.65,-14.424863 L340.65,-50.924863" Height="11.895" Canvas.Left="663.258" Stretch="Fill" Stroke="#FFE6E600" Canvas.Top="116.562" Width="2" StrokeThickness="2"/>
+<Path Data="M617.708,116.624 L665.25,116.624" Height="2" Canvas.Left="630.708" Stretch="Fill" Stroke="#FFE6E600" StrokeThickness="2" Canvas.Top="93.374" Width="39.042"/>
+<Canvas x:Name="Arrow_Copy2" Height="18" Canvas.Left="659.636" Canvas.Top="83.541" Width="21" RenderTransformOrigin="0.5,0.5">
+	<Canvas.RenderTransform>
+		<TransformGroup>
+			<ScaleTransform/>
+			<SkewTransform/>
+			<RotateTransform Angle="180"/>
+			<TranslateTransform/>
+		</TransformGroup>
+	</Canvas.RenderTransform>
+	<Rectangle Fill="#FF3C3C3C" Height="6" Canvas.Left="3.834" Stroke="#FF3C3C3C" StrokeThickness="2" Canvas.Top="3.981" Width="8"/>
+	<Path Fill="#FF3C3C3C" Stroke="#FF3C3C3C" StrokeThickness="2" Data="M1,1 L12.93934,1 12.93934,12.93934 z" Height="6" RenderTransformOrigin="0.461954425754477,0.538045570294887" Stretch="Fill" Width="6" Canvas.Left="0.423" Canvas.Top="3.755">
+		<Path.RenderTransform>
+			<TransformGroup>
+				<ScaleTransform/>
+				<SkewTransform/>
+				<RotateTransform Angle="224.27500000000003"/>
+				<TranslateTransform/>
+			</TransformGroup>
+		</Path.RenderTransform>
+	</Path>
+</Canvas>
+<Path Data="M1547.25,525.375 L1547.25,578.25946" Height="55.634" Canvas.Left="1546.25" Stretch="Fill" Stroke="#FFE6E600" StrokeThickness="2" Canvas.Top="524.375" Width="2"/>
+<Path Data="M1559.8333,513 L1611.8414,513" Height="2" Canvas.Left="1558.833" Stretch="Fill" Stroke="#FFE6E600" StrokeThickness="2" Canvas.Top="512" Width="54.008"/>
+<Canvas x:Name="Arrow_Copy3" Height="18" Canvas.Left="1602.618" Canvas.Top="501.917" Width="21" RenderTransformOrigin="0.5,0.5">
+	<Canvas.RenderTransform>
+		<TransformGroup>
+			<ScaleTransform/>
+			<SkewTransform/>
+			<RotateTransform Angle="180"/>
+			<TranslateTransform/>
+		</TransformGroup>
+	</Canvas.RenderTransform>
+	<Rectangle Fill="#FF3C3C3C" Height="6" Canvas.Left="3.834" Stroke="#FF3C3C3C" StrokeThickness="2" Canvas.Top="3.981" Width="8"/>
+	<Path Fill="#FF3C3C3C" Stroke="#FF3C3C3C" StrokeThickness="2" Data="M1,1 L12.93934,1 12.93934,12.93934 z" Height="6" RenderTransformOrigin="0.461954425754477,0.538045570294887" Stretch="Fill" Width="6" Canvas.Left="0.423" Canvas.Top="3.755">
+		<Path.RenderTransform>
+			<TransformGroup>
+				<ScaleTransform/>
+				<SkewTransform/>
+				<RotateTransform Angle="224.27500000000003"/>
+				<TranslateTransform/>
+			</TransformGroup>
+		</Path.RenderTransform>
+	</Path>
+</Canvas>
+<Mimic x:Name='_VA_FR_V459A' Unit='VA_FR_V459A' MimicTemplate='{StaticResource OUTLETBL_YOKO_BL}' Canvas.Top='190' Canvas.Left='510.666'/>
+<Mimic x:Name='_VA_FR_V459B' Unit='VA_FR_V459B' MimicTemplate='{StaticResource OUTLETBL_YOKO_BL}' Canvas.Top='190.5' Canvas.Left='768.666'/>
+<!-- FODEnd -->
+
+
+
+
+
+            </Canvas>
+
+            <!-- BL Part -->
+            <Canvas x:Name='BL' Visibility='{CentumApplicationServiceBinding IsBLEnabled}'>
+                <!-- BLStart -->
+<Mimic x:Name='_LHD_FR_V464' Unit='LHD_FR_V464' MimicTemplate='{StaticResource OUTLETBL_YOKO_BL}' Canvas.Top='905.5' Canvas.Left='1527'/>
+<!-- BLEnd -->
+
+
+
+
+
+            </Canvas>
+
+            <!-- FAILURE Part -->
+            <Canvas x:Name='FAILURE' Visibility='{CentumApplicationServiceBinding IsFailureEnabled}' d:IsLocked="True">
+                <!-- FAILUREStart -->
+<Mimic x:Name='_E456_FAILURE' Unit='E456' MimicTemplate='{StaticResource AIRCOOLER_YOKO_FAILURE}' Canvas.Top='349.332' Canvas.Left='1329.332'/>
+<!-- FAILUREEnd -->
+
+
+
+
+
+            </Canvas>
+
+        </RSIViewContainer>
+    </MimicTemplate>
+
+</ResourceDictionary>

@@ -1,0 +1,50 @@
+﻿
+<ResourceDictionary xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation' xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml' xmlns:d='http://schemas.microsoft.com/expression/blend/2008' xmlns:mc='http://schemas.openxmlformats.org/markup-compatibility/2006' mc:Ignorable='d'>
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source='Synoptics/S400_2_12_Translated.xaml' />
+    </ResourceDictionary.MergedDictionaries>
+    <MimicTemplate x:Key='S400_2_12'>
+        <RSIViewContainer>
+            <!-- Graphic Part -->
+            <ContentPresenter x:Name='SYNOPTIC' Content='{Binding}' ContentTemplate='{StaticResource S400_2_12_Translated}' d:IsLocked='True'  />
+
+            <!-- Graphic Overlay Part -->
+            <Canvas x:Name='SYNOPTIC_OVERLAY'/>
+
+            <!-- FOD Part -->
+            <Canvas x:Name='FOD' Visibility='{CentumApplicationServiceBinding IsFODEnabled}'>
+                <!-- FODStart -->
+<Mimic x:Name='_PCV1132_PID' Unit='PCV1132_PID' MimicTemplate='{StaticResource AnalogFloatBox}'  Param0='PV' Canvas.Top='621.332' Canvas.Left='563'/>
+<Mimic x:Name='_10HV0549' Unit='10HV0549' MimicTemplate='{StaticResource HANDVALVE_YOKO_FOD}' Canvas.Top='644.958' Canvas.Left='1368.5'/>
+<Mimic x:Name='_10HV0550' Unit='10HV0550' MimicTemplate='{StaticResource HANDVALVE_YOKO_FOD}' Canvas.Top='684.997' Canvas.Left='1368.5'/>
+<Mimic x:Name='_PCV1132' Unit='PCV1132' MimicTemplate='{StaticResource REGULATOR_YOKO_FOD}' Canvas.Top='627.332' Canvas.Left='531'/>
+<!-- FODEnd -->
+
+
+
+
+
+            </Canvas>
+
+            <!-- BL Part -->
+            <Canvas x:Name='BL' Visibility='{CentumApplicationServiceBinding IsBLEnabled}'>
+                <!-- BLStart -->
+<Mimic x:Name='_ATM_FR_H404' Unit='ATM_FR_H404' MimicTemplate='{StaticResource OUTLETBL_YOKO_BL}' Canvas.Top='596.5' Canvas.Left='1479'/>
+<!-- BLEnd -->
+
+
+
+
+
+            </Canvas>
+
+            <!-- FAILURE Part -->
+            <Canvas x:Name='FAILURE' Visibility='{CentumApplicationServiceBinding IsFailureEnabled}'>
+                <!-- FAILUREStart -->
+                <!-- FAILUREEnd -->
+            </Canvas>
+
+        </RSIViewContainer>
+    </MimicTemplate>
+
+</ResourceDictionary>

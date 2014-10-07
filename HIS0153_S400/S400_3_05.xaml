@@ -1,0 +1,110 @@
+﻿
+<ResourceDictionary xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation' xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml' xmlns:d='http://schemas.microsoft.com/expression/blend/2008' xmlns:mc='http://schemas.openxmlformats.org/markup-compatibility/2006' mc:Ignorable='d'>
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source='Synoptics/S400_3_05_Translated.xaml' />
+    </ResourceDictionary.MergedDictionaries>
+    <MimicTemplate x:Key='S400_3_05'>
+        <RSIViewContainer>
+            <!-- Graphic Part -->
+            <ContentPresenter x:Name='SYNOPTIC' Content='{Binding}' ContentTemplate='{StaticResource S400_3_05_Translated}' d:IsLocked='True'  />
+
+            <!-- Graphic Overlay Part -->
+            <Canvas x:Name='SYNOPTIC_OVERLAY'/>
+
+            <!-- FOD Part -->
+            <Canvas x:Name='FOD' Visibility='{CentumApplicationServiceBinding IsFODEnabled}' Margin="0,2,0,-2">
+                <!-- FODStart -->
+<Mimic x:Name='_E452' Unit='E452' MimicTemplate='{StaticResource AIRCOOLER_YOKO_FOD}' Width="140" Height="56" Canvas.Top='298' Canvas.Left='1541.667'/>
+<Mimic x:Name='_E455' Unit='E455' MimicTemplate='{StaticResource AIRCOOLER_YOKO_FOD}' Width="138.667" Height="56" Canvas.Top='298' Canvas.Left='1372'/>
+<Mimic x:Name='_F455A' Unit='F455A' MimicTemplate='{StaticResource FILTER_YOKO_FOD}' Width="80.333" Height="84.667" Canvas.Top='613.5' Canvas.Left='1365.333'/>
+<Mimic x:Name='_F456A' Unit='F456A' MimicTemplate='{StaticResource FILTER_YOKO_FOD}' Width="78.667" Height="84.667" Canvas.Top='613.5' Canvas.Left='1606'/>
+<Mimic x:Name='_HF_FR_H454' Unit='HF_FR_H454' MimicTemplate='{StaticResource OUTLETBL_YOKO_FOD}' Canvas.Top='457' Canvas.Left='801.014'/>
+<Mimic x:Name='_HF_FR_V454' Unit='HF_FR_V454' MimicTemplate='{StaticResource OUTLETBL_YOKO_FOD}' Canvas.Top='500.378' Canvas.Left='913.771'/>
+<Mimic x:Name='_PSV4504' Unit='PSV4504' MimicTemplate='{StaticResource PSV_YOKO_FOD}' Canvas.Top='488.75' Canvas.Left='821.664'/>
+<Mimic x:Name='_PSV4509' Unit='PSV4509' MimicTemplate='{StaticResource PSV_YOKO_FOD}' Canvas.Top='448.576' Canvas.Left='713.98'/>
+<Path Data="M692.625,530.125 L748.00226,530.125" Fill="#FF3C3C3C" Height="2" Canvas.Left="691.625" Stretch="Fill" Stroke="#FFFFFF3C" StrokeThickness="2" Canvas.Top="529.125" Width="55.627"/>
+<Path Data="M746.16667,500.586 L746.16667,531.12784" Fill="#FF3C3C3C" Height="32.542" Canvas.Left="745.167" Stretch="Fill" Stroke="#FFFFFF3C" StrokeThickness="2" Canvas.Top="499.586" Width="2"/>
+<Path Data="M758.58333,487.75 L800.01417,487.75" Fill="#FF3C3C3C" Height="2" Canvas.Left="757.583" Stretch="Fill" Stroke="#FFFFFF3C" StrokeThickness="2" Canvas.Top="486.75" Width="43.431"/>
+<Canvas x:Name="Arrow" Height="16" Canvas.Left="798.833" Canvas.Top="479.25" Width="22" RenderTransformOrigin="0.5,0.5">
+	<Canvas.RenderTransform>
+		<TransformGroup>
+			<ScaleTransform/>
+			<SkewTransform/>
+			<RotateTransform Angle="180"/>
+			<TranslateTransform/>
+		</TransformGroup>
+	</Canvas.RenderTransform>
+	<Rectangle Fill="#FF3C3C3C" Height="10" Canvas.Left="4.834" Stroke="#FF3C3C3C" StrokeThickness="2" Canvas.Top="2.731" Width="16"/>
+	<Path Fill="#FF3C3C3C" Stroke="#FF3C3C3C" StrokeThickness="2" Data="M1,1 L12.93934,1 12.93934,12.93934 z" Height="13.939" RenderTransformOrigin="0.461954425754477,0.538045570294887" Stretch="Fill" Width="13.939">
+		<Path.RenderTransform>
+			<TransformGroup>
+				<ScaleTransform/>
+				<SkewTransform/>
+				<RotateTransform Angle="224.27500000000003"/>
+				<TranslateTransform/>
+			</TransformGroup>
+		</Path.RenderTransform>
+	</Path>
+</Canvas>
+<Path Data="M847.49969,540.08583 L847.49969,570.62767" Fill="#FF3C3C3C" Height="38.792" Canvas.Left="852.25" Stretch="Fill" Stroke="#FFFFFF3C" StrokeThickness="2" Canvas.Top="539.711" Width="2"/>
+<Path Data="M758.58333,487.75 L800.01417,487.75" Fill="#FF3C3C3C" Height="2" Canvas.Left="865.34" Stretch="Fill" Stroke="#FFFFFF3C" StrokeThickness="2" Canvas.Top="527.164" Width="43.431"/>
+<Canvas x:Name="Arrow_Copy" Height="16" Canvas.Left="906.59" Canvas.Top="519.664" Width="22" RenderTransformOrigin="0.5,0.5">
+	<Canvas.RenderTransform>
+		<TransformGroup>
+			<ScaleTransform/>
+			<SkewTransform/>
+			<RotateTransform Angle="180"/>
+			<TranslateTransform/>
+		</TransformGroup>
+	</Canvas.RenderTransform>
+	<Rectangle Fill="#FF3C3C3C" Height="10" Canvas.Left="4.834" Stroke="#FF3C3C3C" StrokeThickness="2" Canvas.Top="2.731" Width="16"/>
+	<Path Fill="#FF3C3C3C" Stroke="#FF3C3C3C" StrokeThickness="2" Data="M1,1 L12.93934,1 12.93934,12.93934 z" Height="13.939" RenderTransformOrigin="0.461954425754477,0.538045570294887" Stretch="Fill" Width="13.939">
+		<Path.RenderTransform>
+			<TransformGroup>
+				<ScaleTransform/>
+				<SkewTransform/>
+				<RotateTransform Angle="224.27500000000003"/>
+				<TranslateTransform/>
+			</TransformGroup>
+		</Path.RenderTransform>
+	</Path>
+</Canvas>
+<!-- FODEnd -->
+
+
+
+
+
+            </Canvas>
+
+            <!-- BL Part -->
+            <Canvas x:Name='BL' Visibility='{CentumApplicationServiceBinding IsBLEnabled}' d:IsLocked="True">
+                <!-- BLStart -->
+<Mimic x:Name='_E452_V432_M' Unit='E452_V432_M' MimicTemplate='{StaticResource OUTLETBL_YOKO_BL}' Canvas.Top='863.166' Canvas.Left='1302.666'/>
+<!-- BLEnd -->
+
+
+
+
+
+            </Canvas>
+
+            <!-- FAILURE Part -->
+            <Canvas x:Name='FAILURE' Visibility='{CentumApplicationServiceBinding IsFailureEnabled}' d:IsLocked="True">
+                <!-- FAILUREStart -->
+<Mimic x:Name='_E452_FAILURE' Unit='E452' MimicTemplate='{StaticResource AIRCOOLER_YOKO_FAILURE}' Canvas.Top='378' Canvas.Left='1669'/>
+<Mimic x:Name='_E455_FAILURE' Unit='E455' MimicTemplate='{StaticResource AIRCOOLER_YOKO_FAILURE}' Canvas.Top='391' Canvas.Left='1370'/>
+<Mimic x:Name='_F455A_FAILURE' Unit='F455A' MimicTemplate='{StaticResource FILTER_YOKO_FAILURE}' Canvas.Top='587' Canvas.Left='1460'/>
+<Mimic x:Name='_F456A_FAILURE' Unit='F456A' MimicTemplate='{StaticResource FILTER_YOKO_FAILURE}' Canvas.Top='587' Canvas.Left='1701'/>
+<!-- FAILUREEnd -->
+
+
+
+
+
+            </Canvas>
+
+        </RSIViewContainer>
+    </MimicTemplate>
+
+</ResourceDictionary>

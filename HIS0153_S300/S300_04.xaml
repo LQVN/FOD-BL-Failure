@@ -1,0 +1,265 @@
+﻿
+<ResourceDictionary xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation' xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml' xmlns:d='http://schemas.microsoft.com/expression/blend/2008' xmlns:mc='http://schemas.openxmlformats.org/markup-compatibility/2006' mc:Ignorable='d'>
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source='Synoptics/S300_04_Translated.xaml' />
+    </ResourceDictionary.MergedDictionaries>
+    <MimicTemplate x:Key='S300_04'>
+        <RSIViewContainer>
+            <!-- Graphic Part -->
+            <ContentPresenter x:Name='SYNOPTIC' Content='{Binding}' ContentTemplate='{StaticResource S300_04_Translated}'  />
+
+            <!-- Graphic Overlay Part -->
+            <Canvas x:Name='SYNOPTIC_OVERLAY'/>
+
+            <!-- FOD Part -->
+            <Canvas x:Name='FOD' Visibility='{CentumApplicationServiceBinding IsFODEnabled}'>
+                <!-- FODStart -->
+<Path Data="M120,415 L305.06756,415" Fill="Yellow" Height="2" Canvas.Left="889.333" Stretch="Fill" Stroke="Yellow" Canvas.Top="651.004" Width="196" StrokeThickness="2"/>
+<!-- FODStart -->
+            	<Mimic x:Name='_ATM_FR_V305' Unit='ATM_FR_V305' MimicTemplate='{StaticResource OUTLETBL_YOKO_FOD}' Canvas.Top='700.25' Canvas.Left='496.833' RenderTransformOrigin="4.559,5.984"/>
+            	<Mimic x:Name='_CWI_TO_E311' Unit='CWI_TO_E311' MimicTemplate='{StaticResource INLETBL_YOKO_FOD}' Canvas.Top='513.085' Canvas.Left='653.331'/>
+            	<Mimic x:Name='_CWRI_FR_E311' Unit='CWRI_FR_E311' MimicTemplate='{StaticResource OUTLETBL_YOKO_FOD}' Canvas.Top='646.329' Canvas.Left='837.497'/>
+            	<Mimic x:Name='_HF_FR_C301A_1' Unit='HF_FR_C301A_1' MimicTemplate='{StaticResource OUTLETBL_YOKO_FOD}' Canvas.Top='604.414' Canvas.Left='1140'/>
+            	<Mimic x:Name='_HF_FR_C301B_1' Unit='HF_FR_C301B_1' MimicTemplate='{StaticResource OUTLETBL_YOKO_FOD}' Canvas.Top='600.89' Canvas.Left='1468.164'/>
+            	<Mimic x:Name='_HF_FR_V309' Unit='HF_FR_V309' MimicTemplate='{StaticResource OUTLETBL_YOKO_FOD}' Canvas.Top='653.249' Canvas.Left='381.5'/>
+            	<Mimic x:Name='_P05_FR_V305' Unit='P05_FR_V305' MimicTemplate='{StaticResource OUTLETBL_YOKO_FOD}' Canvas.Top='927.25' Canvas.Left='498.625'/>
+            	<Mimic x:Name='_PSV3013' Unit='PSV3013' MimicTemplate='{StaticResource PSV_YOKO_FOD}' Canvas.Top='593.069' Canvas.Left='1371.664'/>
+            	<Mimic x:Name='_E311' Unit='E311' MimicTemplate='{StaticResource EXCHANGER_YOKO_FOD}' Width="50" Height="50" Canvas.Top='580' Canvas.Left='730'/>
+            	<Mimic x:Name='_HV11104' Unit='HV11104' MimicTemplate='{StaticResource HANDVALVE_YOKO_FOD}' Canvas.Top='600.247' Canvas.Left='968'/>
+            	<Path Data="M120,415 L305.06756,415" Fill="Yellow" Height="2" Canvas.Left="1204" Stretch="Fill" Stroke="Yellow" Canvas.Top="652.337" Width="201" StrokeThickness="2"/>
+            	<Path Data="M120,415 L305.06756,415" Fill="Yellow" Height="2" Canvas.Left="520" Stretch="Fill" Stroke="Yellow" Canvas.Top="729" Width="134.876" StrokeThickness="2"/>
+            	<Path Data="M120,415 L305.06756,415" Fill="Yellow" Height="2" Canvas.Left="629.886" Stretch="Fill" Stroke="Yellow" Canvas.Top="750.906" Width="45.896" StrokeThickness="2" RenderTransformOrigin="0.5,0.5">
+            		<Path.RenderTransform>
+            			<TransformGroup>
+            				<ScaleTransform/>
+            				<SkewTransform/>
+            				<RotateTransform Angle="90"/>
+            				<TranslateTransform/>
+            			</TransformGroup>
+            		</Path.RenderTransform>
+            	</Path>
+            	<Mimic x:Name='_30HV1102' Unit='30HV1102' MimicTemplate='{StaticResource HANDVALVE_YOKO_FOD}' Canvas.Top='724.5' Canvas.Left='581.5'/>
+            	<Path Data="M120,415 L305.06756,415" Fill="Yellow" Height="2" Canvas.Left="636.5" Stretch="Fill" Stroke="Yellow" Canvas.Top="941.5" Width="32.896" StrokeThickness="2" RenderTransformOrigin="0.5,0.5">
+            		<Path.RenderTransform>
+            			<TransformGroup>
+            				<ScaleTransform/>
+            				<SkewTransform/>
+            				<RotateTransform Angle="90"/>
+            				<TranslateTransform/>
+            			</TransformGroup>
+            		</Path.RenderTransform>
+            	</Path>
+            	<Path Data="M120,415 L305.06756,415" Fill="Yellow" Height="2" Canvas.Left="504.833" Stretch="Fill" Stroke="Yellow" Canvas.Top="956.5" Width="150.043" StrokeThickness="2"/>
+            	<Mimic x:Name='_30HV1101' Unit='30HV1101' MimicTemplate='{StaticResource HANDVALVE_YOKO_FOD}' Canvas.Top='952' Canvas.Left='580'/>
+            	<Path Data="M120,415 L305.06756,415" Fill="Yellow" Height="2" Canvas.Left="732.166" Stretch="Fill" Stroke="Blue" Canvas.Top="652.166" Width="45.668" StrokeThickness="2" RenderTransformOrigin="0.5,0.5">
+            		<Path.RenderTransform>
+            			<TransformGroup>
+            				<ScaleTransform/>
+            				<SkewTransform/>
+            				<RotateTransform Angle="90"/>
+            				<TranslateTransform/>
+            			</TransformGroup>
+            		</Path.RenderTransform>
+            	</Path>
+            	<Path Data="M120,415 L305.06756,415" Fill="Yellow" Height="2" Canvas.Left="752.997" Stretch="Fill" Stroke="Blue" Canvas.Top="674" Width="100" StrokeThickness="2"/>
+            	<Path Data="M120,415 L305.06756,415" Fill="Yellow" Height="2" Canvas.Left="735" Stretch="Fill" Stroke="Blue" Canvas.Top="559.001" Width="40" StrokeThickness="2" RenderTransformOrigin="0.5,0.5">
+            		<Path.RenderTransform>
+            			<TransformGroup>
+            				<ScaleTransform/>
+            				<SkewTransform/>
+            				<RotateTransform Angle="90"/>
+            				<TranslateTransform/>
+            			</TransformGroup>
+            		</Path.RenderTransform>
+            	</Path>
+            	<Path Data="M120,415 L305.06756,415" Fill="Blue" Height="2" Canvas.Left="655.999" Stretch="Fill" Stroke="Blue" Canvas.Top="541.002" Width="100" StrokeThickness="2"/>
+            	<Mimic x:Name='_30HV1201' Unit='30HV1201' MimicTemplate='{StaticResource HANDVALVE_YOKO_FOD}' Canvas.Top='537.502' Canvas.Left='704.828'/>
+            	<Canvas x:Name="Arrow" Height="16" Canvas.Left="500.125" Canvas.Top="722.167" Width="22">
+            		<Rectangle Fill="#FF3C3C3C" Height="10" Canvas.Left="4.834" Stroke="#FF3C3C3C" StrokeThickness="2" Canvas.Top="2.356" Width="16"/>
+            		<Path Fill="#FF3C3C3C" Stroke="#FF3C3C3C" StrokeThickness="2" Data="M1,1 L12.93934,1 12.93934,12.93934 z" Height="13.939" RenderTransformOrigin="0.461954425754477,0.538045570294887" Stretch="Fill" Width="13.939">
+            			<Path.RenderTransform>
+            				<TransformGroup>
+            					<ScaleTransform/>
+            					<SkewTransform/>
+            					<RotateTransform Angle="224.27500000000003"/>
+            					<TranslateTransform/>
+            				</TransformGroup>
+            			</Path.RenderTransform>
+            		</Path>
+            	</Canvas>
+            	<Canvas x:Name="Arrow_Copy" Height="16" Canvas.Left="500.5" Canvas.Top="950" Width="22">
+            		<Rectangle Fill="#FF3C3C3C" Height="10" Canvas.Left="4.834" Stroke="#FF3C3C3C" StrokeThickness="2" Canvas.Top="2.356" Width="16"/>
+            		<Path Fill="#FF3C3C3C" Stroke="#FF3C3C3C" StrokeThickness="2" Data="M1,1 L12.93934,1 12.93934,12.93934 z" Height="13.939" RenderTransformOrigin="0.461954425754477,0.538045570294887" Stretch="Fill" Width="13.939">
+            			<Path.RenderTransform>
+            				<TransformGroup>
+            					<ScaleTransform/>
+            					<SkewTransform/>
+            					<RotateTransform Angle="224.27500000000003"/>
+            					<TranslateTransform/>
+            				</TransformGroup>
+            			</Path.RenderTransform>
+            		</Path>
+            	</Canvas>
+            	<Canvas x:Name="Arrow_Copy1" Height="16" Canvas.Left="652.337" Canvas.Top="533.666" Width="22" RenderTransformOrigin="0.5,0.5">
+            		<Canvas.RenderTransform>
+            			<TransformGroup>
+            				<ScaleTransform/>
+            				<SkewTransform/>
+            				<RotateTransform Angle="180"/>
+            				<TranslateTransform/>
+            			</TransformGroup>
+            		</Canvas.RenderTransform>
+            		<Rectangle Fill="#FF3C3C3C" Height="10" Canvas.Left="4.834" Stroke="#FF3C3C3C" StrokeThickness="2" Canvas.Top="2.356" Width="16"/>
+            		<Path Fill="#FF3C3C3C" Stroke="#FF3C3C3C" StrokeThickness="2" Data="M1,1 L12.93934,1 12.93934,12.93934 z" Height="13.939" RenderTransformOrigin="0.461954425754477,0.538045570294887" Stretch="Fill" Width="13.939">
+            			<Path.RenderTransform>
+            				<TransformGroup>
+            					<ScaleTransform/>
+            					<SkewTransform/>
+            					<RotateTransform Angle="224.27500000000003"/>
+            					<TranslateTransform/>
+            				</TransformGroup>
+            			</Path.RenderTransform>
+            		</Path>
+            	</Canvas>
+            	<Canvas x:Name="Arrow_Copy2" Height="16" Canvas.Left="835.999" Canvas.Top="666.334" Width="22" RenderTransformOrigin="0.5,0.5">
+            		<Canvas.RenderTransform>
+            			<TransformGroup>
+            				<ScaleTransform/>
+            				<SkewTransform/>
+            				<RotateTransform Angle="180"/>
+            				<TranslateTransform/>
+            			</TransformGroup>
+            		</Canvas.RenderTransform>
+            		<Rectangle Fill="#FF3C3C3C" Height="10" Canvas.Left="4.834" Stroke="#FF3C3C3C" StrokeThickness="2" Canvas.Top="2.356" Width="16"/>
+            		<Path Fill="#FF3C3C3C" Stroke="#FF3C3C3C" StrokeThickness="2" Data="M1,1 L12.93934,1 12.93934,12.93934 z" Height="13.939" RenderTransformOrigin="0.461954425754477,0.538045570294887" Stretch="Fill" Width="13.939">
+            			<Path.RenderTransform>
+            				<TransformGroup>
+            					<ScaleTransform/>
+            					<SkewTransform/>
+            					<RotateTransform Angle="224.27500000000003"/>
+            					<TranslateTransform/>
+            				</TransformGroup>
+            			</Path.RenderTransform>
+            		</Path>
+            	</Canvas>
+            	<Canvas x:Name="Arrow_Copy3" Height="16" Canvas.Left="385" Canvas.Top="674" Width="22">
+            		<Rectangle Fill="#FF3C3C3C" Height="10" Canvas.Left="4.834" Stroke="#FF3C3C3C" StrokeThickness="2" Canvas.Top="2.356" Width="16"/>
+            		<Path Fill="#FF3C3C3C" Stroke="#FF3C3C3C" StrokeThickness="2" Data="M1,1 L12.93934,1 12.93934,12.93934 z" Height="13.939" RenderTransformOrigin="0.461954425754477,0.538045570294887" Stretch="Fill" Width="13.939">
+            			<Path.RenderTransform>
+            				<TransformGroup>
+            					<ScaleTransform/>
+            					<SkewTransform/>
+            					<RotateTransform Angle="224.27500000000003"/>
+            					<TranslateTransform/>
+            				</TransformGroup>
+            			</Path.RenderTransform>
+            		</Path>
+            	</Canvas>
+            	<Path Data="M120,415 L305.06756,415" Fill="Yellow" Height="2" Canvas.Left="407" Stretch="Fill" Stroke="Yellow" Canvas.Top="680.999" Width="155" StrokeThickness="2"/>
+            	<Path Data="M120,415 L305.06756,415" Fill="Yellow" Height="2" Canvas.Left="548.313" Stretch="Fill" Stroke="Yellow" Canvas.Top="670.771" Width="23.374" StrokeThickness="2" RenderTransformOrigin="0.5,0.5">
+            		<Path.RenderTransform>
+            			<TransformGroup>
+            				<ScaleTransform/>
+            				<SkewTransform/>
+            				<RotateTransform Angle="90"/>
+            				<TranslateTransform/>
+            			</TransformGroup>
+            		</Path.RenderTransform>
+            	</Path>
+            	<Mimic x:Name='_30HV1202' Unit='30HV1202' MimicTemplate='{StaticResource HANDVALVE_YOKO_FOD}' Canvas.Top='677' Canvas.Left='470'/>
+            	<Path Data="M146.58043,412.33334 L331.64799,412.33334" Fill="Yellow" Height="2" Canvas.Left="1095.003" Stretch="Fill" Stroke="Yellow" Canvas.Top="631.582" Width="48.417" StrokeThickness="2"/>
+            	<Path Data="M144.88269,425 L329.95025,425" Fill="Yellow" Height="2" Canvas.Left="1415.553" Stretch="Fill" Stroke="Yellow" Canvas.Top="631.413" Width="63.98" StrokeThickness="2"/>
+            	<Canvas x:Name="Arrow_Copy4" Height="16" Canvas.Left="1139.842" Canvas.Top="624.999" Width="22" RenderTransformOrigin="0.5,0.5">
+            		<Canvas.RenderTransform>
+            			<TransformGroup>
+            				<ScaleTransform/>
+            				<SkewTransform/>
+            				<RotateTransform Angle="180"/>
+            				<TranslateTransform/>
+            			</TransformGroup>
+            		</Canvas.RenderTransform>
+            		<Rectangle Fill="#FF3C3C3C" Height="10" Canvas.Left="4.834" Stroke="#FF3C3C3C" StrokeThickness="2" Canvas.Top="2.356" Width="16"/>
+            		<Path Fill="#FF3C3C3C" Stroke="#FF3C3C3C" StrokeThickness="2" Data="M1,1 L12.93934,1 12.93934,12.93934 z" Height="13.939" RenderTransformOrigin="0.461954425754477,0.538045570294887" Stretch="Fill" Width="13.939">
+            			<Path.RenderTransform>
+            				<TransformGroup>
+            					<ScaleTransform/>
+            					<SkewTransform/>
+            					<RotateTransform Angle="224.27500000000003"/>
+            					<TranslateTransform/>
+            				</TransformGroup>
+            			</Path.RenderTransform>
+            		</Path>
+            	</Canvas>
+            	<Canvas x:Name="Arrow_Copy5" Height="16" Canvas.Left="1465.008" Canvas.Top="623.684" Width="22" RenderTransformOrigin="0.5,0.5">
+            		<Canvas.RenderTransform>
+            			<TransformGroup>
+            				<ScaleTransform/>
+            				<SkewTransform/>
+            				<RotateTransform Angle="180"/>
+            				<TranslateTransform/>
+            			</TransformGroup>
+            		</Canvas.RenderTransform>
+            		<Rectangle Fill="#FF3C3C3C" Height="10" Canvas.Left="4.834" Stroke="#FF3C3C3C" StrokeThickness="2" Canvas.Top="2.356" Width="16"/>
+            		<Path Fill="#FF3C3C3C" Stroke="#FF3C3C3C" StrokeThickness="2" Data="M1,1 L12.93934,1 12.93934,12.93934 z" Height="13.939" RenderTransformOrigin="0.461954425754477,0.538045570294887" Stretch="Fill" Width="13.939">
+            			<Path.RenderTransform>
+            				<TransformGroup>
+            					<ScaleTransform/>
+            					<SkewTransform/>
+            					<RotateTransform Angle="224.27500000000003"/>
+            					<TranslateTransform/>
+            				</TransformGroup>
+            			</Path.RenderTransform>
+            		</Path>
+            	</Canvas>
+            	<Path Data="M-32.83746,423.66667 L152.2301,423.66667" Fill="Yellow" Height="2" Canvas.Left="1078.494" Stretch="Fill" Stroke="Yellow" Canvas.Top="647.82" Width="9.696" StrokeThickness="2" RenderTransformOrigin="0.5,0.5">
+            		<Path.RenderTransform>
+            			<TransformGroup>
+            				<ScaleTransform/>
+            				<SkewTransform/>
+            				<RotateTransform Angle="90"/>
+            				<TranslateTransform/>
+            			</TransformGroup>
+            		</Path.RenderTransform>
+            	</Path>
+            	<Path Data="M-32.83746,423.66667 L152.2301,423.66667" Fill="Yellow" Height="2" Canvas.Left="1397.511" Stretch="Fill" Stroke="Yellow" Canvas.Top="648.644" Width="11.321" StrokeThickness="2" RenderTransformOrigin="0.5,0.5">
+            		<Path.RenderTransform>
+            			<TransformGroup>
+            				<ScaleTransform/>
+            				<SkewTransform/>
+            				<RotateTransform Angle="90"/>
+            				<TranslateTransform/>
+            			</TransformGroup>
+            		</Path.RenderTransform>
+            	</Path>
+            	<Mimic x:Name='_PSV3012' Unit='PSV3012' MimicTemplate='{StaticResource PSV_YOKO_FOD}' Canvas.Top='593.572' Canvas.Left='1051.51'/>
+<!-- FODEnd -->
+
+
+
+            </Canvas>
+
+            <!-- BL Part -->
+            <Canvas x:Name='BL' Visibility='{CentumApplicationServiceBinding IsBLEnabled}' d:IsHidden="True">
+                <!-- BLStart -->
+<Mimic x:Name='_HF_FR_C301A_2' Unit='HF_FR_C301A_2' MimicTemplate='{StaticResource OUTLETBL_YOKO_BL}' Canvas.Top='668.25' Canvas.Left='990.5'/>
+<Mimic x:Name='_HF_FR_C301B_2' Unit='HF_FR_C301B_2' MimicTemplate='{StaticResource OUTLETBL_YOKO_BL}' Canvas.Top='668.25' Canvas.Left='1305.5'/>
+<!-- BLEnd -->
+
+
+
+            </Canvas>
+
+            <!-- FAILURE Part -->
+            <Canvas x:Name='FAILURE' Visibility='{CentumApplicationServiceBinding IsFailureEnabled}' Margin="-0.667,0,0.667,0" d:IsHidden="True">
+                <!-- FAILUREStart -->
+<Mimic x:Name='_E311_FAILURE' Unit='E311' MimicTemplate='{StaticResource EXCHANGER_YOKO_FAILURE}' Canvas.Top='10' Canvas.Left='10'/>
+<!-- FAILUREEnd -->
+
+
+
+            </Canvas>
+
+        </RSIViewContainer>
+    </MimicTemplate>
+
+</ResourceDictionary>

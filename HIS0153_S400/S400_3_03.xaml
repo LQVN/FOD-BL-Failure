@@ -1,0 +1,64 @@
+﻿
+<ResourceDictionary xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation' xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml' xmlns:d='http://schemas.microsoft.com/expression/blend/2008' xmlns:mc='http://schemas.openxmlformats.org/markup-compatibility/2006' mc:Ignorable='d'>
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source='Synoptics/S400_3_03_Translated.xaml' />
+    </ResourceDictionary.MergedDictionaries>
+    <MimicTemplate x:Key='S400_3_03'>
+        <RSIViewContainer>
+            <!-- Graphic Part -->
+            <ContentPresenter x:Name='SYNOPTIC' Content='{Binding}' ContentTemplate='{StaticResource S400_3_03_Translated}' d:IsLocked='True'  />
+
+            <!-- Graphic Overlay Part -->
+            <Canvas x:Name='SYNOPTIC_OVERLAY'/>
+
+            <!-- FOD Part -->
+            <Canvas x:Name='FOD' Visibility='{CentumApplicationServiceBinding IsFODEnabled}'>
+                <!-- FODStart -->
+<Mimic x:Name='_E454' Unit='E454' MimicTemplate='{StaticResource EXCHANGER_YOKO_FOD}' Width="230" Height="40.814" Canvas.Top='148.988' Canvas.Left='875.666' RenderTransformOrigin="0.5,0.5">
+	<Mimic.RenderTransform>
+		<TransformGroup>
+			<ScaleTransform/>
+			<SkewTransform AngleY="0.321"/>
+			<RotateTransform/>
+			<TranslateTransform Y="0.494"/>
+		</TransformGroup>
+	</Mimic.RenderTransform>
+</Mimic>
+<Mimic x:Name='_C452' Unit='C452' MimicTemplate='{StaticResource MOTOR_YOKO_FOD}' Width="56.5" Height="55.5" Canvas.Top='348.529' Canvas.Left='1043.355'/>
+<Mimic x:Name='_C451' Unit='C451' MimicTemplate='{StaticResource MOTOR_YOKO_FOD}' Width="56.5" Height="55.5" Canvas.Top='165.028' Canvas.Left='1369.854'/>
+<!-- FODEnd -->
+
+
+
+
+
+            </Canvas>
+
+            <!-- BL Part -->
+            <Canvas x:Name='BL' Visibility='{CentumApplicationServiceBinding IsBLEnabled}' d:IsLocked="True">
+                <!-- BLStart -->
+<Mimic x:Name='_AIR_FR_ATM' Unit='AIR_FR_ATM' MimicTemplate='{StaticResource INLETBL_YOKO_BL}' Canvas.Top='371.5' Canvas.Left='1103.166'/>
+<!-- BLEnd -->
+
+
+
+
+
+            </Canvas>
+
+            <!-- FAILURE Part -->
+            <Canvas x:Name='FAILURE' Visibility='{CentumApplicationServiceBinding IsFailureEnabled}' d:IsLocked="True">
+                <!-- FAILUREStart -->
+<Mimic x:Name='_E454_FAILURE' Unit='E454' MimicTemplate='{StaticResource EXCHANGER_YOKO_FAILURE}' Canvas.Top='130' Canvas.Left='1096'/>
+<!-- FAILUREEnd -->
+
+
+
+
+
+            </Canvas>
+
+        </RSIViewContainer>
+    </MimicTemplate>
+
+</ResourceDictionary>

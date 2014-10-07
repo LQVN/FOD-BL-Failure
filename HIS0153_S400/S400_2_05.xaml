@@ -1,0 +1,73 @@
+﻿
+<ResourceDictionary xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation' xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml' xmlns:d='http://schemas.microsoft.com/expression/blend/2008' xmlns:mc='http://schemas.openxmlformats.org/markup-compatibility/2006' mc:Ignorable='d'>
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source='Synoptics/S400_2_05_Translated.xaml' />
+    </ResourceDictionary.MergedDictionaries>
+    <MimicTemplate x:Key='S400_2_05'>
+        <RSIViewContainer>
+            <!-- Graphic Part -->
+            <ContentPresenter x:Name='SYNOPTIC' Content='{Binding}' ContentTemplate='{StaticResource S400_2_05_Translated}' d:IsLocked='True'  />
+
+            <!-- Graphic Overlay Part -->
+            <Canvas x:Name='SYNOPTIC_OVERLAY'/>
+
+            <!-- FOD Part -->
+            <Canvas x:Name='FOD' Visibility='{CentumApplicationServiceBinding IsFODEnabled}'>
+                <!-- FODStart -->
+<Mimic x:Name='_40HV1501' Unit='40HV1501' MimicTemplate='{StaticResource HANDVALVE_YOKO_FOD}' Canvas.Top='10' Canvas.Left='10'/>
+<Mimic x:Name='_40HV1502' Unit='40HV1502' MimicTemplate='{StaticResource HANDVALVE_YOKO_FOD}' Canvas.Top='10' Canvas.Left='70'/>
+<Mimic x:Name='_40HV1503' Unit='40HV1503' MimicTemplate='{StaticResource HANDVALVE_YOKO_FOD}' Canvas.Top='10' Canvas.Left='130'/>
+<Mimic x:Name='_40HV1504' Unit='40HV1504' MimicTemplate='{StaticResource HANDVALVE_YOKO_FOD}' Canvas.Top='10' Canvas.Left='190'/>
+<Mimic x:Name='_PSV4112' Unit='PSV4112' MimicTemplate='{StaticResource PSV_YOKO_FOD}' Canvas.Top='10' Canvas.Left='250'/>
+<Mimic x:Name='_PSV4108' Unit='PSV4108' MimicTemplate='{StaticResource PSV_YOKO_FOD}' Canvas.Top='10' Canvas.Left='310'/>
+<Mimic x:Name='_HF_FR_C402A1_2' Unit='HF_FR_C402A1_2' MimicTemplate='{StaticResource OUTLETBL_YOKO_FOD}' Canvas.Top='10' Canvas.Left='370'/>
+<Mimic x:Name='_HF_FR_C402A2_2' Unit='HF_FR_C402A2_2' MimicTemplate='{StaticResource OUTLETBL_YOKO_FOD}' Canvas.Top='10' Canvas.Left='430'/>
+<Mimic x:Name='_40HV1601' Unit='40HV1601' MimicTemplate='{StaticResource HANDVALVE_YOKO_FOD}' Canvas.Top='10' Canvas.Left='490'/>
+<Mimic x:Name='_40HV1602' Unit='40HV1602' MimicTemplate='{StaticResource HANDVALVE_YOKO_FOD}' Canvas.Top='10' Canvas.Left='550'/>
+<Mimic x:Name='_40HV1603' Unit='40HV1603' MimicTemplate='{StaticResource HANDVALVE_YOKO_FOD}' Canvas.Top='10' Canvas.Left='610'/>
+<Mimic x:Name='_40HV1604' Unit='40HV1604' MimicTemplate='{StaticResource HANDVALVE_YOKO_FOD}' Canvas.Top='10' Canvas.Left='670'/>
+<Mimic x:Name='_PSV4411' Unit='PSV4411' MimicTemplate='{StaticResource PSV_YOKO_FOD}' Canvas.Top='70' Canvas.Left='10'/>
+<Mimic x:Name='_PSV4410' Unit='PSV4410' MimicTemplate='{StaticResource PSV_YOKO_FOD}' Canvas.Top='70' Canvas.Left='70'/>
+<Mimic x:Name='_HF_FR_C402B1_2' Unit='HF_FR_C402B1_2' MimicTemplate='{StaticResource OUTLETBL_YOKO_FOD}' Canvas.Top='70' Canvas.Left='130'/>
+<Mimic x:Name='_HF_FR_C402B2_2' Unit='HF_FR_C402B2_2' MimicTemplate='{StaticResource OUTLETBL_YOKO_FOD}' Canvas.Top='70' Canvas.Left='190'/>
+<Mimic x:Name='_40HV1701' Unit='40HV1701' MimicTemplate='{StaticResource HANDVALVE_YOKO_FOD}' Canvas.Top='70' Canvas.Left='250'/>
+<Mimic x:Name='_40HV1702' Unit='40HV1702' MimicTemplate='{StaticResource HANDVALVE_YOKO_FOD}' Canvas.Top='70' Canvas.Left='310'/>
+<Mimic x:Name='_40HV1703' Unit='40HV1703' MimicTemplate='{StaticResource HANDVALVE_YOKO_FOD}' Canvas.Top='70' Canvas.Left='370'/>
+<Mimic x:Name='_40HV1704' Unit='40HV1704' MimicTemplate='{StaticResource HANDVALVE_YOKO_FOD}' Canvas.Top='70' Canvas.Left='430'/>
+<Mimic x:Name='_PSV4406' Unit='PSV4406' MimicTemplate='{StaticResource PSV_YOKO_FOD}' Canvas.Top='70' Canvas.Left='490'/>
+<Mimic x:Name='_PSV4412' Unit='PSV4412' MimicTemplate='{StaticResource PSV_YOKO_FOD}' Canvas.Top='70' Canvas.Left='550'/>
+<Mimic x:Name='_HF_FR_C402C1_2' Unit='HF_FR_C402C1_2' MimicTemplate='{StaticResource OUTLETBL_YOKO_FOD}' Canvas.Top='70' Canvas.Left='610'/>
+<Mimic x:Name='_HF_FR_C402C2_2' Unit='HF_FR_C402C2_2' MimicTemplate='{StaticResource OUTLETBL_YOKO_FOD}' Canvas.Top='70' Canvas.Left='670'/>
+<!-- FODEnd -->
+
+
+
+
+            </Canvas>
+
+            <!-- BL Part -->
+            <Canvas x:Name='BL' Visibility='{CentumApplicationServiceBinding IsBLEnabled}'>
+                <!-- BLStart -->
+<Mimic x:Name='_HF_FR_C402A1_1' Unit='HF_FR_C402A1_1' MimicTemplate='{StaticResource OUTLETBL_YOKO_BL}' Canvas.Top='10' Canvas.Left='10'/>
+<Mimic x:Name='_HF_FR_C402A2_1' Unit='HF_FR_C402A2_1' MimicTemplate='{StaticResource OUTLETBL_YOKO_BL}' Canvas.Top='10' Canvas.Left='70'/>
+<Mimic x:Name='_HF_FR_C402B1_1' Unit='HF_FR_C402B1_1' MimicTemplate='{StaticResource OUTLETBL_YOKO_BL}' Canvas.Top='10' Canvas.Left='130'/>
+<Mimic x:Name='_HF_FR_C402B2_1' Unit='HF_FR_C402B2_1' MimicTemplate='{StaticResource OUTLETBL_YOKO_BL}' Canvas.Top='10' Canvas.Left='190'/>
+<Mimic x:Name='_HF_FR_C402C1_1' Unit='HF_FR_C402C1_1' MimicTemplate='{StaticResource OUTLETBL_YOKO_BL}' Canvas.Top='10' Canvas.Left='250'/>
+<Mimic x:Name='_HF_FR_C402C2_1' Unit='HF_FR_C402C2_1' MimicTemplate='{StaticResource OUTLETBL_YOKO_BL}' Canvas.Top='233.25' Canvas.Left='1550.5'/>
+<!-- BLEnd -->
+
+
+
+
+            </Canvas>
+
+            <!-- FAILURE Part -->
+            <Canvas x:Name='FAILURE' Visibility='{CentumApplicationServiceBinding IsFailureEnabled}' d:IsHidden="True">
+                <!-- FAILUREStart -->
+                <!-- FAILUREEnd -->
+            </Canvas>
+
+        </RSIViewContainer>
+    </MimicTemplate>
+
+</ResourceDictionary>

@@ -1,0 +1,147 @@
+﻿
+<ResourceDictionary xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation' xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml' xmlns:d='http://schemas.microsoft.com/expression/blend/2008' xmlns:mc='http://schemas.openxmlformats.org/markup-compatibility/2006' mc:Ignorable='d'>
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source='Synoptics/S400_2_13_Translated.xaml' />
+    </ResourceDictionary.MergedDictionaries>
+    <MimicTemplate x:Key='S400_2_13'>
+        <RSIViewContainer>
+            <!-- Graphic Part -->
+            <ContentPresenter x:Name='SYNOPTIC' Content='{Binding}' ContentTemplate='{StaticResource S400_2_13_Translated}' d:IsLocked='True'  />
+
+            <!-- Graphic Overlay Part -->
+            <Canvas x:Name='SYNOPTIC_OVERLAY'/>
+
+            <!-- FOD Part -->
+            <Canvas x:Name='FOD' Visibility='{CentumApplicationServiceBinding IsFODEnabled}'>
+                <!-- FODStart -->
+<Mimic x:Name='_10HV0641' Unit='10HV0641' MimicTemplate='{StaticResource HANDVALVE_YOKO_FOD}' Canvas.Top='628.996' Canvas.Left='1442.331' RenderTransformOrigin="0.5,0.5">
+	<Mimic.RenderTransform>
+		<TransformGroup>
+			<ScaleTransform/>
+			<SkewTransform/>
+			<RotateTransform Angle="90"/>
+			<TranslateTransform/>
+		</TransformGroup>
+	</Mimic.RenderTransform>
+</Mimic>
+<Mimic x:Name='_HF_FR_H404' Unit='HF_FR_H404' MimicTemplate='{StaticResource OUTLETBL_YOKO_FOD}' Canvas.Top='602.903' Canvas.Left='1536.752'/>
+<Canvas x:Name="Arrow_Copy8" Height="16" Canvas.Left="1510" Canvas.Top="606.378" Width="22" RenderTransformOrigin="0.5,0.5">
+	<Canvas.RenderTransform>
+		<TransformGroup>
+			<ScaleTransform/>
+			<SkewTransform/>
+			<RotateTransform Angle="90"/>
+			<TranslateTransform/>
+		</TransformGroup>
+	</Canvas.RenderTransform>
+	<Rectangle Fill="#FF3C3C3C" Height="10" Canvas.Left="4.834" Stroke="#FF3C3C3C" StrokeThickness="2" Canvas.Top="2.356" Width="16"/>
+	<Path Fill="#FF3C3C3C" Stroke="#FF3C3C3C" StrokeThickness="2" Data="M1,1 L12.93934,1 12.93934,12.93934 z" Height="13.939" RenderTransformOrigin="0.461954425754477,0.538045570294887" Stretch="Fill" Width="13.939">
+		<Path.RenderTransform>
+			<TransformGroup>
+				<ScaleTransform/>
+				<SkewTransform/>
+				<RotateTransform Angle="224.27500000000003"/>
+				<TranslateTransform/>
+			</TransformGroup>
+		</Path.RenderTransform>
+	</Path>
+</Canvas>
+<Path Data="M310,81.75 L520,81.75" Fill="#FF138648" Height="2" Canvas.Left="1507.501" Stretch="Fill" Stroke="#FFE6E600" StrokeThickness="2" Canvas.Top="636.378" Width="28.296" RenderTransformOrigin="0.5,0.5">
+	<Path.RenderTransform>
+		<TransformGroup>
+			<ScaleTransform/>
+			<SkewTransform/>
+			<RotateTransform Angle="90"/>
+			<TranslateTransform/>
+		</TransformGroup>
+	</Path.RenderTransform>
+</Path>
+<Path Data="M310,81.75 L520,81.75" Fill="#FF138648" Height="2" Canvas.Left="1451.454" Stretch="Fill" Stroke="#FFE6E600" StrokeThickness="2" Canvas.Top="648.503" Width="71.796" RenderTransformOrigin="0.5,0.5">
+	<Path.RenderTransform>
+		<TransformGroup>
+			<ScaleTransform/>
+			<SkewTransform/>
+			<RotateTransform Angle="0"/>
+			<TranslateTransform/>
+		</TransformGroup>
+	</Path.RenderTransform>
+</Path>
+<Mimic x:Name='_PCV1181_PID' Unit='PCV1133_PID' MimicTemplate='{StaticResource AnalogFloatBox}' Canvas.Top='274.875' Canvas.Left='115.575' Width="37.3" Height="30"/>
+<Path Data="M310,81.75 L520,81.75" Fill="#FF138648" Height="2" Canvas.Left="96.75" Stretch="Fill" Stroke="#FFE6E600" StrokeThickness="2" Canvas.Top="334.75" Width="123.732" RenderTransformOrigin="0.5,0.5">
+	<Path.RenderTransform>
+		<TransformGroup>
+			<ScaleTransform/>
+			<SkewTransform/>
+			<RotateTransform Angle="90"/>
+			<TranslateTransform/>
+		</TransformGroup>
+	</Path.RenderTransform>
+</Path>
+<Path Data="M310,81.75 L520,81.75" Fill="#FF138648" Height="2" Canvas.Left="157.875" Stretch="Fill" Stroke="#FFE6E600" StrokeThickness="2" Canvas.Top="274.875" Width="90" RenderTransformOrigin="0.5,0.5">
+	<Path.RenderTransform>
+		<TransformGroup>
+			<ScaleTransform/>
+			<SkewTransform/>
+			<RotateTransform/>
+			<TranslateTransform/>
+		</TransformGroup>
+	</Path.RenderTransform>
+</Path>
+<Path Data="M310,81.75 L520,81.75" Fill="#FF138648" Height="2" Canvas.Left="156.625" Stretch="Fill" Stroke="#FFE6E600" StrokeThickness="2" Canvas.Top="396" Width="91.25" RenderTransformOrigin="0.5,0.5">
+	<Path.RenderTransform>
+		<TransformGroup>
+			<ScaleTransform/>
+			<SkewTransform/>
+			<RotateTransform/>
+			<TranslateTransform/>
+		</TransformGroup>
+	</Path.RenderTransform>
+</Path>
+<Mimic x:Name='_PCV1181_PID_FOD' Unit='PCV1133' MimicTemplate='{StaticResource REGULATOR_YOKO_FOD}' Canvas.Top='301.08' Canvas.Left='106' RenderTransformOrigin="0.5,0.5">
+	<Mimic.RenderTransform>
+		<TransformGroup>
+			<ScaleTransform/>
+			<SkewTransform/>
+			<RotateTransform Angle="-90"/>
+			<TranslateTransform/>
+		</TransformGroup>
+	</Mimic.RenderTransform>
+</Mimic>
+<Mimic x:Name='_10HV0642' Unit='10HV0642' MimicTemplate='{StaticResource HANDVALVE_YOKO_FOD}' Canvas.Top='628.997' Canvas.Left='1514' RenderTransformOrigin="0.5,0.5">
+	<Mimic.RenderTransform>
+		<TransformGroup>
+			<ScaleTransform/>
+			<SkewTransform/>
+			<RotateTransform Angle="90"/>
+			<TranslateTransform/>
+		</TransformGroup>
+	</Mimic.RenderTransform>
+</Mimic>
+<!-- FODEnd -->
+
+
+
+
+            </Canvas>
+
+            <!-- BL Part -->
+            <Canvas x:Name='BL' Visibility='{CentumApplicationServiceBinding IsBLEnabled}'>
+                <!-- BLStart -->
+<Mimic x:Name='_ATM_FR_H404' Unit='ATM_FR_H404' MimicTemplate='{StaticResource OUTLETBL_YOKO_BL}' Canvas.Top='603.25' Canvas.Left='1470.5'/>
+<!-- BLEnd -->
+
+
+
+
+            </Canvas>
+            <Canvas x:Name='FAILURE' Visibility='{CentumApplicationServiceBinding IsFailureEnabled}' Margin="-10,0,10,0">
+            	<!-- FAILUREStart -->
+            	<!-- FAILUREEnd -->
+            </Canvas>
+
+            <!-- FAILURE Part -->
+
+        </RSIViewContainer>
+    </MimicTemplate>
+
+</ResourceDictionary>

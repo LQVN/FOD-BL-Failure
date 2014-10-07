@@ -1,0 +1,107 @@
+﻿
+<ResourceDictionary xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation' xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml' xmlns:d='http://schemas.microsoft.com/expression/blend/2008' xmlns:mc='http://schemas.openxmlformats.org/markup-compatibility/2006' mc:Ignorable='d'>
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source='Synoptics/S300_08_Translated.xaml' />
+    </ResourceDictionary.MergedDictionaries>
+    <MimicTemplate x:Key='S300_08'>
+        <RSIViewContainer>
+            <!-- Graphic Part -->
+            <ContentPresenter x:Name='SYNOPTIC' Content='{Binding}' ContentTemplate='{StaticResource S300_08_Translated}' d:IsLocked='True'  />
+
+            <!-- Graphic Overlay Part -->
+            <Canvas x:Name='SYNOPTIC_OVERLAY'/>
+
+            <!-- FOD Part -->
+            <Canvas x:Name='FOD' Visibility='{CentumApplicationServiceBinding IsFODEnabled}'>
+                <!-- FODStart -->
+<Mimic x:Name='_PCV1617_PID' Unit='PCV1617_PID' MimicTemplate='{StaticResource AnalogFloatBox}'  Param0='PV' Canvas.Top='740' Canvas.Left='607.5'/>
+<Mimic x:Name='_HF_FR_BURNER' Unit='HF_FR_BURNER' MimicTemplate='{StaticResource OUTLETBL_YOKO_FOD}' Canvas.Top='683.5' Canvas.Left='1614.5'/>
+<Mimic x:Name='_16HV0211' Unit='16HV0211' MimicTemplate='{StaticResource HANDVALVE_YOKO_FOD}' Canvas.Top='729' Canvas.Left='1532.5' RenderTransformOrigin="0.5,0.5">
+	<Mimic.RenderTransform>
+		<TransformGroup>
+			<ScaleTransform/>
+			<SkewTransform/>
+			<RotateTransform Angle="90"/>
+			<TranslateTransform/>
+		</TransformGroup>
+	</Mimic.RenderTransform>
+</Mimic>
+<Mimic x:Name='_PCV1617' Unit='PCV1617' MimicTemplate='{StaticResource REGULATOR_YOKO_FOD}' Canvas.Top='713' Canvas.Left='545'/>
+<Path Data="M120,415 L305.06756,415" Fill="Yellow" Height="2" Canvas.Left="1565.75" Stretch="Fill" Stroke="Yellow" Canvas.Top="727.25" Width="66.625" StrokeThickness="2" RenderTransformOrigin="0.5,0.5">
+	<Path.RenderTransform>
+		<TransformGroup>
+			<ScaleTransform/>
+			<SkewTransform/>
+			<RotateTransform Angle="90"/>
+			<TranslateTransform/>
+		</TransformGroup>
+	</Path.RenderTransform>
+</Path>
+<Canvas x:Name="Arrow" Height="16" Canvas.Left="1588" Canvas.Top="692.664" Width="22" RenderTransformOrigin="0.5,0.5">
+	<Canvas.RenderTransform>
+		<TransformGroup>
+			<ScaleTransform/>
+			<SkewTransform/>
+			<RotateTransform Angle="90"/>
+			<TranslateTransform/>
+		</TransformGroup>
+	</Canvas.RenderTransform>
+	<Rectangle Fill="#FF3C3C3C" Height="10" Canvas.Left="4.834" Stroke="#FF3C3C3C" StrokeThickness="2" Canvas.Top="2.356" Width="16"/>
+	<Path Fill="#FF3C3C3C" Stroke="#FF3C3C3C" StrokeThickness="2" Data="M1,1 L12.93934,1 12.93934,12.93934 z" Height="13.939" RenderTransformOrigin="0.461954425754477,0.538045570294887" Stretch="Fill" Width="13.939">
+		<Path.RenderTransform>
+			<TransformGroup>
+				<ScaleTransform/>
+				<SkewTransform/>
+				<RotateTransform Angle="224.27500000000003"/>
+				<TranslateTransform/>
+			</TransformGroup>
+		</Path.RenderTransform>
+	</Path>
+</Canvas>
+<Path Data="M120,415 L305.06756,415" Fill="Yellow" Height="2" Canvas.Left="1540" Stretch="Fill" Stroke="Yellow" Canvas.Top="758.668" Width="61.062" StrokeThickness="2" RenderTransformOrigin="0.5,0.5">
+	<Path.RenderTransform>
+		<TransformGroup>
+			<ScaleTransform/>
+			<SkewTransform/>
+			<RotateTransform Angle="0"/>
+			<TranslateTransform/>
+		</TransformGroup>
+	</Path.RenderTransform>
+</Path>
+<Mimic x:Name='_16HV0212' Unit='16HV0212' MimicTemplate='{StaticResource HANDVALVE_YOKO_FOD}' Canvas.Top='728.5' Canvas.Left='1591.5' RenderTransformOrigin="0.5,0.5">
+	<Mimic.RenderTransform>
+		<TransformGroup>
+			<ScaleTransform/>
+			<SkewTransform/>
+			<RotateTransform Angle="90"/>
+			<TranslateTransform/>
+		</TransformGroup>
+	</Mimic.RenderTransform>
+</Mimic>
+<!-- FODEnd -->
+
+
+
+            </Canvas>
+
+            <!-- BL Part -->
+            <Canvas x:Name='BL' Visibility='{CentumApplicationServiceBinding IsBLEnabled}'>
+                <!-- BLStart -->
+<Mimic x:Name='_ATM_FR_BURNER' Unit='ATM_FR_BURNER' MimicTemplate='{StaticResource OUTLETBL_YOKO_BL}' Canvas.Top='682.75' Canvas.Left='1554'/>
+<Mimic x:Name='_HF_FR_UV1607' Unit='HF_FR_UV1607' MimicTemplate='{StaticResource OUTLETBL_YOKO_BL}' Canvas.Top='805' Canvas.Left='525.5'/>
+<!-- BLEnd -->
+
+
+
+            </Canvas>
+
+            <!-- FAILURE Part -->
+            <Canvas x:Name='FAILURE' Visibility='{CentumApplicationServiceBinding IsFailureEnabled}' d:IsHidden="True">
+                <!-- FAILUREStart -->
+                <!-- FAILUREEnd -->
+            </Canvas>
+
+        </RSIViewContainer>
+    </MimicTemplate>
+
+</ResourceDictionary>

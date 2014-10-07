@@ -1,0 +1,184 @@
+﻿
+<ResourceDictionary xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation' xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml' xmlns:d='http://schemas.microsoft.com/expression/blend/2008' xmlns:mc='http://schemas.openxmlformats.org/markup-compatibility/2006' mc:Ignorable='d'>
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source='Synoptics/S400_3_09_Translated.xaml' />
+    </ResourceDictionary.MergedDictionaries>
+    <MimicTemplate x:Key='S400_3_09'>
+        <RSIViewContainer>
+            <!-- Graphic Part -->
+            <ContentPresenter x:Name='SYNOPTIC' Content='{Binding}' ContentTemplate='{StaticResource S400_3_09_Translated}' d:IsLocked='True'  />
+
+            <!-- Graphic Overlay Part -->
+            <Canvas x:Name='SYNOPTIC_OVERLAY'/>
+
+            <!-- FOD Part -->
+            <Canvas x:Name='FOD' Visibility='{CentumApplicationServiceBinding IsFODEnabled}' Margin="0.667,-0.171,-0.667,0.171">
+                <!-- FODStart -->
+<Mimic x:Name='_45HV1902' Unit='45HV1902' MimicTemplate='{StaticResource HANDVALVE_YOKO_FOD}' Canvas.Top='244.998' Canvas.Left='713.5'/>
+<Mimic x:Name='_45HV2002' Unit='45HV2002' MimicTemplate='{StaticResource HANDVALVE_YOKO_FOD}' Canvas.Top='934.753' Canvas.Left='857.404'/>
+<Mimic x:Name='_CWI_TO_E457' Unit='CWI_TO_E457' MimicTemplate='{StaticResource INLETBL_YOKO_FOD}' Canvas.Top='593.243' Canvas.Left='742'/>
+<Mimic x:Name='_CWRI_FR_E457' Unit='CWRI_FR_E457' MimicTemplate='{StaticResource OUTLETBL_YOKO_FOD}' Canvas.Top='592' Canvas.Left='913.5'/>
+<Mimic x:Name='_P453A' Unit='P453A' MimicTemplate='{StaticResource PUMP_YOKO_FOD}' Width="50" Height="60" Canvas.Top='222' Canvas.Left='1075'/>
+<Mimic x:Name='_P453B' Unit='P453B' MimicTemplate='{StaticResource PUMP_YOKO_FOD}' Width="50" Height="60" Canvas.Top='402.334' Canvas.Left='1075.333'/>
+<Mimic x:Name='_P454A' Unit='P454A' MimicTemplate='{StaticResource PUMP_YOKO_FOD}' Width="50" Height="60" Canvas.Top='739.503' Canvas.Left='563.521'/>
+<Mimic x:Name='_P454B' Unit='P454B' MimicTemplate='{StaticResource PUMP_YOKO_FOD}' Width="50" Height="60" Canvas.Top='762.69' Canvas.Left='1481.5'/>
+<Mimic x:Name='_P455' Unit='P455' MimicTemplate='{StaticResource PUMP_YOKO_FOD}' Width="50" Height="60" Canvas.Top='838.657' Canvas.Left='565.522'/>
+<Mimic x:Name='_E457' Unit='E457' MimicTemplate='{StaticResource EXCHANGER_YOKO_FOD}' Width="68.667" Height="70.667" Canvas.Top='583.243' Canvas.Left='796.736'/>
+<Mimic x:Name='_P452A' Unit='P452A' MimicTemplate='{StaticResource PUMP_YOKO_FOD}' Width="50" Height="60" Canvas.Top='711.5' Canvas.Left='1067.5'/>
+<Mimic x:Name='_P452B' Unit='P452B' MimicTemplate='{StaticResource PUMP_YOKO_FOD}' Width="50" Height="60" Canvas.Top='851.996' Canvas.Left='1067.5'/>
+<Path Data="M1181,711.5 L1181,960.5" Height="258.083" Canvas.Left="1181" Stretch="Fill" Stroke="#FF8000FF" Canvas.Top="710" Width="2.5" StrokeThickness="2"/>
+<Path Data="M1183.5,968.083 L999.20477,968.083" Height="2" Canvas.Left="987.976" Stretch="Fill" Stroke="#FF8000FF" StrokeThickness="2" Canvas.Top="966.958" Width="196.274" RenderTransformOrigin="0.5,0.5"/>
+<Path Data="M990,812.33333 L990,966.98099" Height="156.75" Canvas.Left="989" Stretch="Fill" Stroke="#FF8000FF" StrokeThickness="2" Canvas.Top="811.333" Width="2"/>
+<Mimic x:Name='_45HV2101' Unit='45HV2101' MimicTemplate='{StaticResource HANDVALVE_YOKO_FOD}' Canvas.Top='962.908' Canvas.Left='1093.5' RenderTransformOrigin="0.4,1.1"/>
+<Path Data="M1349.6667,326.33333 L1349.6667,330.83642" Height="6.504" Canvas.Left="1348.667" Stretch="Fill" Stroke="Green" StrokeThickness="2" Canvas.Top="325.022" Width="2"/>
+<Path Data="M1350.667,330.125 L1462.3841,330.125" Height="2" Canvas.Left="1349.667" Stretch="Fill" Stroke="Green" StrokeThickness="2" Canvas.Top="328.544" Width="146.675"/>
+<Canvas x:Name="Arrow_Copy3" Height="18" Width="21" RenderTransformOrigin="0.5,0.5" Canvas.Left="1486.152" Canvas.Top="318.588">
+	<Canvas.RenderTransform>
+		<TransformGroup>
+			<ScaleTransform/>
+			<SkewTransform/>
+			<RotateTransform Angle="180"/>
+			<TranslateTransform/>
+		</TransformGroup>
+	</Canvas.RenderTransform>
+	<Rectangle Fill="#FF3C3C3C" Height="6" Canvas.Left="3.834" Stroke="#FF3C3C3C" StrokeThickness="2" Canvas.Top="3.981" Width="8"/>
+	<Path Fill="#FF3C3C3C" Stroke="#FF3C3C3C" StrokeThickness="2" Data="M1,1 L12.93934,1 12.93934,12.93934 z" Height="6" RenderTransformOrigin="0.461954425754477,0.538045570294887" Stretch="Fill" Width="6" Canvas.Left="0.423" Canvas.Top="3.755">
+		<Path.RenderTransform>
+			<TransformGroup>
+				<ScaleTransform/>
+				<SkewTransform/>
+				<RotateTransform Angle="224.27500000000003"/>
+				<TranslateTransform/>
+			</TransformGroup>
+		</Path.RenderTransform>
+	</Path>
+</Canvas>
+<Mimic x:Name='_45HV2201' Unit='45HV2201' MimicTemplate='{StaticResource HANDVALVE_YOKO_FOD}' Canvas.Top='324.332' Canvas.Left='1465.831'/>
+<Path Data="M309,593 L269.88479,593" Height="2" Canvas.Left="296.885" Stretch="Fill" Stroke="#FFD9D90A" StrokeThickness="2" Canvas.Top="592" Width="13.115"/>
+<Path Data="M268.885,592 L268.885,478.58693" Height="429.989" Canvas.Left="297.9" Stretch="Fill" Stroke="#FFD9D90A" StrokeThickness="2" Canvas.Top="163.011" Width="2"/>
+<Path Data="M268.885,163.011 L369.19031,163.011" Height="2" Canvas.Left="296.885" Stretch="Fill" Stroke="#FFD9D90A" StrokeThickness="2" Canvas.Top="162.011" Width="73.305"/>
+<Mimic x:Name='_45HV1901' Unit='45HV1901' MimicTemplate='{StaticResource HANDVALVE_YOKO_FOD}' Canvas.Top='157.995' Canvas.Left='324'/>
+<Path Data="M747.75,619.75 L791.74239,619.75" Height="2" Canvas.Left="746.833" Stretch="Fill" Stroke="Blue" StrokeThickness="2" Canvas.Top="617.671" Width="49.159"/>
+<Path Data="M747.75,619.75 L791.74239,619.75" Height="2" Canvas.Left="865.904" Stretch="Fill" Stroke="Blue" StrokeThickness="2" Canvas.Top="617.671" Width="49.159"/>
+<Canvas x:Name="Arrow_Copy" Height="18" Width="12.334" RenderTransformOrigin="0.5,0.5" Canvas.Left="913.484" Canvas.Top="607.588">
+	<Canvas.RenderTransform>
+		<TransformGroup>
+			<ScaleTransform/>
+			<SkewTransform/>
+			<RotateTransform Angle="180"/>
+			<TranslateTransform/>
+		</TransformGroup>
+	</Canvas.RenderTransform>
+	<Rectangle Fill="#FF3C3C3C" Height="6" Canvas.Left="3.834" Stroke="#FF3C3C3C" StrokeThickness="2" Canvas.Top="3.981" Width="8"/>
+	<Path Fill="#FF3C3C3C" Stroke="#FF3C3C3C" StrokeThickness="2" Data="M1,1 L12.93934,1 12.93934,12.93934 z" Height="6" RenderTransformOrigin="0.461954425754477,0.538045570294887" Stretch="Fill" Width="6" Canvas.Left="0.423" Canvas.Top="3.755">
+		<Path.RenderTransform>
+			<TransformGroup>
+				<ScaleTransform/>
+				<SkewTransform/>
+				<RotateTransform Angle="224.27500000000003"/>
+				<TranslateTransform/>
+			</TransformGroup>
+		</Path.RenderTransform>
+	</Path>
+</Canvas>
+<Canvas x:Name="Arrow_Copy1" Height="18" Width="12.334" RenderTransformOrigin="0.5,0.5" Canvas.Left="739.984" Canvas.Top="607.754">
+	<Canvas.RenderTransform>
+		<TransformGroup>
+			<ScaleTransform/>
+			<SkewTransform/>
+			<RotateTransform Angle="180"/>
+			<TranslateTransform/>
+		</TransformGroup>
+	</Canvas.RenderTransform>
+	<Rectangle Fill="#FF3C3C3C" Height="6" Canvas.Left="3.834" Stroke="#FF3C3C3C" StrokeThickness="2" Canvas.Top="3.981" Width="8"/>
+	<Path Fill="#FF3C3C3C" Stroke="#FF3C3C3C" StrokeThickness="2" Data="M1,1 L12.93934,1 12.93934,12.93934 z" Height="6" RenderTransformOrigin="0.461954425754477,0.538045570294887" Stretch="Fill" Width="6" Canvas.Left="0.423" Canvas.Top="3.755">
+		<Path.RenderTransform>
+			<TransformGroup>
+				<ScaleTransform/>
+				<SkewTransform/>
+				<RotateTransform Angle="224.27500000000003"/>
+				<TranslateTransform/>
+			</TransformGroup>
+		</Path.RenderTransform>
+	</Path>
+</Canvas>
+<Path Data="M1487.3333,467.33283 L1487.3333,739.399" Height="155.066" Canvas.Left="1486.318" Stretch="Fill" Stroke="#FF8000FF" StrokeThickness="2" Canvas.Top="584.666" Width="2" RenderTransformOrigin="0.5,0.5">
+	<Path.RenderTransform>
+		<TransformGroup>
+			<ScaleTransform/>
+			<SkewTransform AngleX="-0.013"/>
+			<RotateTransform/>
+			<TranslateTransform X="0.030999999999999917"/>
+		</TransformGroup>
+	</Path.RenderTransform>
+</Path>
+<Path Data="M1487.333,464.66667 L1487.333,736.73284" Height="80.504" Canvas.Left="1486.327" Stretch="Fill" Stroke="#FF8000FF" StrokeThickness="2" Canvas.Top="459.956" Width="2" RenderTransformOrigin="0.5,0.5">
+	<Path.RenderTransform>
+		<TransformGroup>
+			<ScaleTransform/>
+			<SkewTransform AngleX="-0.013"/>
+			<RotateTransform/>
+			<TranslateTransform X="0.031"/>
+		</TransformGroup>
+	</Path.RenderTransform>
+</Path>
+<Path Data="M1494.3018,598.63975 L1499.3643,593.73255 1504.4115,598.4047 1509.443,593.40445" Height="7.235" Canvas.Left="1479.202" Stretch="Fill" Stroke="#FF8000FF" StrokeThickness="2" Canvas.Top="581.072" Width="17.14"/>
+<Path Data="M1494.3018,598.63975 L1499.3643,593.73255 1504.4115,598.4047 1509.443,593.40445" Height="7.234" Canvas.Left="1479.202" Stretch="Fill" Stroke="#FF8000FF" StrokeThickness="2" Canvas.Top="536.618" Width="17.14"/>
+<Mimic x:Name='_45HV2301' Unit='45HV2301' MimicTemplate='{StaticResource HANDVALVE_YOKO_FOD}' Canvas.Top='632.41' Canvas.Left='1479.75' RenderTransformOrigin="0.5,0.5">
+	<Mimic.RenderTransform>
+		<TransformGroup>
+			<ScaleTransform/>
+			<SkewTransform/>
+			<RotateTransform Angle="90"/>
+			<TranslateTransform/>
+		</TransformGroup>
+	</Mimic.RenderTransform>
+</Mimic>
+<Mimic x:Name='_45HV2001' Unit='45HV2001' MimicTemplate='{StaticResource HANDVALVE_YOKO_FOD}' Canvas.Top='613.653' Canvas.Left='763.223'/>
+<Mimic x:Name='_TW_FR_V462' Unit='TW_FR_V462' MimicTemplate='{StaticResource OUTLETBL_YOKO_BL}' Canvas.Top='307' Canvas.Left='1489.333'/>
+<!-- FODEnd -->
+
+
+
+
+
+            </Canvas>
+
+            <!-- BL Part -->
+            <Canvas x:Name='BL' Visibility='{CentumApplicationServiceBinding IsBLEnabled}'>
+                <!-- BLStart -->
+<Mimic x:Name='_RG_TO_ATM' Unit='RG_TO_ATM' MimicTemplate='{StaticResource INLETBL_YOKO_BL}' Canvas.Top='113' Canvas.Left='389'/>
+<Mimic x:Name='_SCS_FR_P454' Unit='SCS_FR_P454' MimicTemplate='{StaticResource OUTLETBL_YOKO_BL}' Canvas.Top='942.25' Canvas.Left='930'/>
+<Mimic x:Name='_TW_TO_V462' Unit='TW_TO_V462' MimicTemplate='{StaticResource INLETBL_YOKO_BL}' Canvas.Top='89.75' Canvas.Left='1624.5'/>
+<Mimic x:Name='_ZC_TO_P455' Unit='ZC_TO_P455' MimicTemplate='{StaticResource INLETBL_YOKO_BL}' Canvas.Top='810.833' Canvas.Left='1781.5'/>
+<!-- BLEnd -->
+
+
+
+
+
+            </Canvas>
+
+            <!-- FAILURE Part -->
+            <Canvas x:Name='FAILURE' Visibility='{CentumApplicationServiceBinding IsFailureEnabled}'>
+                <!-- FAILUREStart -->
+<Mimic x:Name='_P453A_FAILURE' Unit='P453A' MimicTemplate='{StaticResource PUMP_YOKO_FAILURE}' Canvas.Top='205' Canvas.Left='1139'/>
+<Mimic x:Name='_P453B_FAILURE' Unit='P453B' MimicTemplate='{StaticResource PUMP_YOKO_FAILURE}' Canvas.Top='379' Canvas.Left='1139'/>
+<Mimic x:Name='_P454A_FAILURE' Unit='P454A' MimicTemplate='{StaticResource PUMP_YOKO_FAILURE}' Canvas.Top='736' Canvas.Left='628'/>
+<Mimic x:Name='_P454B_FAILURE' Unit='P454B' MimicTemplate='{StaticResource PUMP_YOKO_FAILURE}' Canvas.Top='834' Canvas.Left='628'/>
+<Mimic x:Name='_P455_FAILURE' Unit='P455' MimicTemplate='{StaticResource PUMP_YOKO_FAILURE}' Canvas.Top='769' Canvas.Left='1556'/>
+<Mimic x:Name='_E457_FAILURE' Unit='E457' MimicTemplate='{StaticResource EXCHANGER_YOKO_FAILURE}' Canvas.Top='568' Canvas.Left='842'/>
+<Mimic x:Name='_P452A_FAILURE' Unit='P452A' MimicTemplate='{StaticResource PUMP_YOKO_FAILURE}' Canvas.Top='718' Canvas.Left='1126'/>
+<Mimic x:Name='_P452B_FAILURE' Unit='P452B' MimicTemplate='{StaticResource PUMP_YOKO_FAILURE}' Canvas.Top='820' Canvas.Left='1126'/>
+<!-- FAILUREEnd -->
+
+
+
+
+
+            </Canvas>
+
+        </RSIViewContainer>
+    </MimicTemplate>
+
+</ResourceDictionary>

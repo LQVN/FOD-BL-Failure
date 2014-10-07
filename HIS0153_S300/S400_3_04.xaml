@@ -1,0 +1,66 @@
+
+<ResourceDictionary xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation' xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml' xmlns:d='http://schemas.microsoft.com/expression/blend/2008' xmlns:mc='http://schemas.openxmlformats.org/markup-compatibility/2006' mc:Ignorable='d'>
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source='Synoptics/S400_3_04_Translated.xaml' />
+    </ResourceDictionary.MergedDictionaries>
+    <MimicTemplate x:Key='S400_3_04'>
+        <RSIViewContainer>
+            <!-- Graphic Part -->
+            <ContentPresenter x:Name='SYNOPTIC' Content='{Binding}' ContentTemplate='{StaticResource S400_3_04_Translated}' d:IsLocked='True'  />
+
+            <!-- Graphic Overlay Part -->
+            <Canvas x:Name='SYNOPTIC_OVERLAY'/>
+
+            <!-- FOD Part -->
+            <Canvas x:Name='FOD' Visibility='{CentumApplicationServiceBinding IsFODEnabled}'>
+                <!-- FODStart -->
+<Mimic x:Name='_45HV0701' Unit='45HV0701' MimicTemplate='{StaticResource HANDVALVE_YOKO_FOD}' Canvas.Top='10' Canvas.Left='10'/>
+<Mimic x:Name='_F451' Unit='F451' MimicTemplate='{StaticResource FILTER_YOKO_FOD}' Width="40" Height="60" Canvas.Top='10' Canvas.Left='70'/>
+<Mimic x:Name='_P451' Unit='P451' MimicTemplate='{StaticResource PUMP_YOKO_FOD}' Width="50" Height="60" Canvas.Top='10' Canvas.Left='130'/>
+<Mimic x:Name='_PSV4503' Unit='PSV4503' MimicTemplate='{StaticResource PSV_YOKO_FOD}' Canvas.Top='10' Canvas.Left='190'/>
+<Mimic x:Name='_VA_TO_ATM1' Unit='VA_TO_ATM1' MimicTemplate='{StaticResource OUTLETBL_YOKO_FOD}' Canvas.Top='10' Canvas.Left='250'/>
+<!-- FODEnd -->
+
+
+
+
+
+            </Canvas>
+
+            <!-- BL Part -->
+            <Canvas x:Name='BL' Visibility='{CentumApplicationServiceBinding IsBLEnabled}'>
+                <!-- BLStart -->
+<Mimic x:Name='_CATA_FRESH' Unit='CATA_FRESH' MimicTemplate='{StaticResource INLETBL_YOKO_BL}' Canvas.Top='10' Canvas.Left='10'/>
+<Mimic x:Name='_CL_TO_P451' Unit='CL_TO_P451' MimicTemplate='{StaticResource INLETBL_YOKO_BL}' Canvas.Top='10' Canvas.Left='70'/>
+<Mimic x:Name='_GAS_OUT' Unit='GAS_OUT' MimicTemplate='{StaticResource OUTLETBL_YOKO_BL}' Canvas.Top='10' Canvas.Left='130'/>
+<Mimic x:Name='_GAS_OUT1' Unit='GAS_OUT1' MimicTemplate='{StaticResource OUTLETBL_YOKO_BL}' Canvas.Top='10' Canvas.Left='190'/>
+<Mimic x:Name='_LI_FR_V455' Unit='LI_FR_V455' MimicTemplate='{StaticResource OUTLETBL_YOKO_BL}' Canvas.Top='10' Canvas.Left='250'/>
+<Mimic x:Name='_LI_TO_R451' Unit='LI_TO_R451' MimicTemplate='{StaticResource INLETBL_YOKO_BL}' Canvas.Top='10' Canvas.Left='310'/>
+<Mimic x:Name='_LI_TO_R452' Unit='LI_TO_R452' MimicTemplate='{StaticResource INLETBL_YOKO_BL}' Canvas.Top='10' Canvas.Left='370'/>
+<Mimic x:Name='_LI_TO_V456' Unit='LI_TO_V456' MimicTemplate='{StaticResource INLETBL_YOKO_BL}' Canvas.Top='10' Canvas.Left='430'/>
+<Mimic x:Name='_P451_V424_M' Unit='P451_V424_M' MimicTemplate='{StaticResource OUTLETBL_YOKO_BL}' Canvas.Top='10' Canvas.Left='490'/>
+<!-- BLEnd -->
+
+
+
+
+
+            </Canvas>
+
+            <!-- FAILURE Part -->
+            <Canvas x:Name='FAILURE' Visibility='{CentumApplicationServiceBinding IsFailureEnabled}'>
+                <!-- FAILUREStart -->
+<Mimic x:Name='_F451_FAILURE' Unit='F451' MimicTemplate='{StaticResource FILTER_YOKO_FAILURE}' Canvas.Top='10' Canvas.Left='10'/>
+<Mimic x:Name='_P451_FAILURE' Unit='P451' MimicTemplate='{StaticResource PUMP_YOKO_FAILURE}' Canvas.Top='10' Canvas.Left='70'/>
+<!-- FAILUREEnd -->
+
+
+
+
+
+            </Canvas>
+
+        </RSIViewContainer>
+    </MimicTemplate>
+
+</ResourceDictionary>
